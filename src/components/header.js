@@ -5,12 +5,12 @@ const Container = styled.header`
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
-  `
-  
+`
+
 const Header = props => (
   <Container>
-    <h4>Gadzhi Kharkharov, ~designer</h4>
-    <a href='#'>resume</a>
+    <h4>{props.siteTitle}</h4>
+    <span>resume</span>
   </Container>
 )
 
