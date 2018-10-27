@@ -56,11 +56,12 @@ export const Text = system(
   {
     fontSize: [1, 2],
     color: 'grays.4',
+    fontFamily: 'sansSerif',
+    fontStyle: 'normal',
   },
   'space',
   'color',
   'fontSize',
-  'textStyle',
   'lineHeight'
 )
 Text.displayName = 'Text'
@@ -72,6 +73,8 @@ export const Heading = system(
     m: 0,
     fontSize: [1, 2],
     color: 'grays.5',
+    fontFamily: 'sansSerif',
+    fontStyle: 'italic',
   },
   'textStyle',
   'lineHeight'
@@ -92,16 +95,11 @@ Image.displayName = 'Image'
 
 // LINK
 export const Link = styled.a`
-  text-decoration: none;
+  text-decoration-color: ${themeGet('colors.grays.3')};
+  text-decoration-style: dotted;
   color: inherit;
   &:hover {
     color: ${themeGet('colors.cyan')};
-  }
-  &::after {
-    content: '↗';
-    color: ${themeGet('colors.cyan')};
-    /* font-weight: bold; */
-    /* font-size: ${themeGet('fontSizes.1')}px; */
   }
 `
 Link.displayName = 'Link'

@@ -6,7 +6,7 @@ const Sidebar = props => (
   <Box
     bg="grays.1"
     px={[3, 4]}
-    py={4}
+    py={[3, 4]}
     display="flex"
     justifyContent="space-between"
     // borderRight={['none', null, '1px solid']}
@@ -29,11 +29,11 @@ const Sidebar = props => (
     </Text>
     <Box
       display="grid"
-      gridGap={[2, 3]}
+      gridGap={3}
       gridAutoFlow="column"
       justifyContent="start"
       fontSize={[0, 1]}
-      color="grays.4"
+      color="grays.3"
       mt="auto"
     >
       <Link href="#">email</Link>

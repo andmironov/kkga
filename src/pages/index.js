@@ -9,20 +9,21 @@ import MediaObj from '../components/mediaobj'
 const Section = props => (
   <Box mb={[0, 5]}>
     <Box
+      pt={[4, 4]}
+      pb={[3, 4]}
       px={[3, 0]}
-      py={3}
-      mb={[3, 4]}
       mx={[-3, 0]}
       display="flex"
       alignItems="baseline"
       justifyContent="space-between"
-      borderBottom="2px solid"
-      borderColor="grays.1"
+      borderTop="1px solid"
+      borderColor="grays.0"
       bg={['grays.0', null]}
     >
       <Heading
         lineHeight="solid"
         textStyle="caps"
+        fontStyle="normal"
         color="grays.3"
         fontSize={0}
         m={0}
@@ -47,12 +48,11 @@ const Section = props => (
 
 const Project = props => (
   <Box
-    mb={[3, 4]}
-    pb={[3, 4]}
+    py={[3, 4]}
     display="grid"
     gridTemplateColumns={['1fr', '2fr 2fr', '4fr 2fr']}
     gridGap={3}
-    borderBottom="1px solid"
+    borderTop="1px solid"
     borderColor="grays.1"
   >
     <Box>
@@ -60,7 +60,7 @@ const Project = props => (
       <Text>{props.description}</Text>
     </Box>
     {props.children && (
-      <Box display="grid" gridGap="2px">
+      <Box display="grid" gridGap="1px">
         {props.children}
       </Box>
     )}

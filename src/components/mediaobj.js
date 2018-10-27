@@ -1,22 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import system from 'system-components'
 import { Box, Text, Heading, Link, Image } from '../design-system'
 import { themeGet } from 'styled-system'
 
 const Container = Link.extend`
   position: relative;
   display: flex;
+  text-decoration: none;
   background-color: ${themeGet('colors.grays.1')};
 
   &:hover {
     background-color: ${themeGet('colors.grays.2')};
   }
-
   &::after {
+    content: '';
     position: absolute;
-    top: ${themeGet('space.1')}px;
-    right: ${themeGet('space.1')}px;
+    top: ${themeGet('space.2')}px;
+    right: ${themeGet('space.2')}px;
+    color: ${themeGet('colors.grays.2')};
+  }
+
+  &:hover::after {
+    color: ${themeGet('colors.cyan')};
   }
 `
 

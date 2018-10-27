@@ -21,7 +21,7 @@ export const theme = {
     },
   },
   fonts: {
-    monospace: '"IBM Plex Mono", monospace',
+    monospace: '"Iosevka", monospace',
     sansSerif: '"Inter UI", sans-serif',
   },
   width: [16, 32, 64, 128, 256],
@@ -30,11 +30,11 @@ export const theme = {
   colors: {
     grays: [
       'hsl(0, 0%, 8%)',
-      'hsl(0, 0%, 12%)',
+      'hsl(0, 0%, 11%)',
       'hsl(0, 0%, 20%)',
-      'hsl(0, 0%, 35%)',
+      'hsl(0, 0%, 40%)',
       'hsl(0, 0%, 60%)',
-      'hsl(0, 0%, 90%)',
+      'hsl(0, 0%, 80%)',
     ],
     cyan: 'hsl(169, 100%, 36%)',
     black: '#000',
