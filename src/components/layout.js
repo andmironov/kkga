@@ -68,7 +68,7 @@ const Layout = ({ children }) => (
               top={0}
               minHeight={[theme.heights[4], null, '100vh']}
             />
-            <Box px={[3, 4]} py={4} gridArea="main">
+            <Box px={[3, 4]} py={[0, 4]} gridArea="main">
               <div>{children}</div>
             </Box>
           </Container>

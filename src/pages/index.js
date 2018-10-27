@@ -1,25 +1,57 @@
 import React from 'react'
-import { styled, ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 import { theme, Box, Heading, Text } from '../design-system'
-import system from 'system-components'
 
 import Layout from '../components/layout'
 import MediaObj from '../components/mediaobj'
-import Section from '../components/section'
+// import Section from '../components/section'
 
-const Grid = system({
-  is: Box,
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 50)',
-})
+const Section = props => (
+  <Box mb={[0, 5]}>
+    <Box
+      px={[3, 0]}
+      py={3}
+      mb={[3, 4]}
+      mx={[-3, 0]}
+      display="flex"
+      alignItems="baseline"
+      justifyContent="space-between"
+      borderBottom="2px solid"
+      borderColor="grays.1"
+      bg={['grays.0', null]}
+    >
+      <Heading
+        lineHeight="solid"
+        textStyle="caps"
+        color="grays.3"
+        fontSize={0}
+        m={0}
+        is="h2"
+      >
+        {props.title}
+      </Heading>
+      <Text
+        lineHeight="solid"
+        textStyle="caps"
+        color="grays.3"
+        fontSize={0}
+        m={0}
+      >
+        {props.meta}
+      </Text>
+    </Box>
+
+    {props.children}
+  </Box>
+)
 
 const Project = props => (
   <Box
-    mb={4}
-    pb={4}
+    mb={[3, 4]}
+    pb={[3, 4]}
     display="grid"
     gridTemplateColumns={['1fr', '2fr 2fr', '4fr 2fr']}
-    gridGap={4}
+    gridGap={3}
     borderBottom="1px solid"
     borderColor="grays.1"
   >

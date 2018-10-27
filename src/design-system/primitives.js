@@ -1,16 +1,6 @@
 import system from 'system-components'
-import {
-  themeGet,
-  textStyle,
-  color,
-  space,
-  width,
-  height,
-  fontSize,
-} from 'styled-system'
+import { themeGet } from 'styled-system'
 import styled from 'styled-components'
-import theme from './theme'
-import PropTypes from 'prop-types'
 
 export const Box = system(
   // core
@@ -70,7 +60,8 @@ export const Text = system(
   'space',
   'color',
   'fontSize',
-  'textStyle'
+  'textStyle',
+  'lineHeight'
 )
 Text.displayName = 'Text'
 
@@ -82,7 +73,8 @@ export const Heading = system(
     fontSize: [1, 2],
     color: 'grays.5',
   },
-  'textStyle'
+  'textStyle',
+  'lineHeight'
 )
 Heading.displayName = 'Heading'
 
@@ -105,7 +97,7 @@ export const Link = styled.a`
   &:hover {
     color: ${themeGet('colors.cyan')};
   }
-  &:after {
+  &::after {
     content: '↗';
     color: ${themeGet('colors.cyan')};
     /* font-weight: bold; */

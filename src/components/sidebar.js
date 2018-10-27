@@ -5,12 +5,13 @@ import { Box, Text, Heading, Link } from '../design-system'
 const Sidebar = props => (
   <Box
     bg="grays.1"
-    p={[3, 4]}
+    px={[3, 4]}
+    py={4}
     display="flex"
     justifyContent="space-between"
-    borderRight={['none', null, '1px solid']}
-    borderBottom={['1px solid', null, 'none']}
-    borderColor={['black', null, 'black']}
+    // borderRight={['none', null, '1px solid']}
+    // borderBottom={['1px solid', null, 'none']}
+    // borderColor={['black', null, 'black']}
     flexDirection="column"
     {...props}
   >
