@@ -1,16 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gadzhi Kharkharov',
+    title: 'Gadzhi Kharkharov, ~designer',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    // 'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

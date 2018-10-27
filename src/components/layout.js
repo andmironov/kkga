@@ -2,22 +2,36 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
+import system from 'system-components'
+import { injectGlobal } from 'styled-components'
 
-import Header from './header'
-import Footer from './footer'
-import './global.css'
-// import './layout.css'
+import { theme, Box } from '../design-system'
 
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 64rem) minmax(2rem, 1fr);
-  grid-template-areas: '. content .';
+import Sidebar from './sidebar'
+import './layout.css'
+
+injectGlobal`
+  @import url('https://rsms.me/inter/inter-ui.css');
+  body{margin:0;}
 `
 
-const Content = styled.div`
-  grid-area: content;
-`
+const Root = system({
+  bg: 'grays.0',
+})
+
+const Container = system({
+  is: Box,
+  bg: 'grays.0',
+  color: 'grays.5',
+  display: ['block', null, 'grid'],
+  gridTemplateColumns: '3fr 9fr',
+  gridTemplateAreas: '"sidebar main"',
+  gridGap: theme.space[4],
+  fontFamily: theme.fonts.sansSerif,
+  lineHeight: theme.lineHeights.copy,
+  maxWidth: 8,
+  m: 'auto',
+})
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -40,14 +54,25 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"
+            rel="stylesheet"
+          />
         </Helmet>
-        <Container>
-          <Content>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <div>{children}</div>
-            <Footer />
-          </Content>
-        </Container>
+        <Root>
+          <Container>
+            <Sidebar
+              title={data.site.siteMetadata.title}
+              gridArea="sidebar"
+              position={['static', 'static', 'sticky']}
+              top={0}
+              minHeight={[theme.heights[4], null, '100vh']}
+            />
+            <Box px={[3, 4]} py={4} gridArea="main">
+              <div>{children}</div>
+            </Box>
+          </Container>
+        </Root>
       </>
     )}
   />
