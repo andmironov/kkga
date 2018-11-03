@@ -3,34 +3,45 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import system from 'system-components'
-import { injectGlobal } from 'styled-components'
+import { themeGet } from 'styled-system'
+import { injectGlobal, createGlobalStyle } from 'styled-components'
 
 import { theme, Box } from '../design-system'
 
 import Sidebar from './sidebar'
-import './layout.css'
+// import './layout.css'
 
+// TODO: add iosevka font
 injectGlobal`
-  @import url('https://rsms.me/inter/inter-ui.css');
-  body{margin:0;}
+  @import url('https://fonts.googleapis.com/css?family=Archivo|Archivo+Black');
+  * {box-sizing: border-box}
+  body{
+    margin:0;
+    background-color: ${theme.colors.grays[1]};
+  }
 `
 
+// const GlobalStyle = createGlobalStyle`
+//   body {
+//     color: ${props => (props.whiteColor ? 'white' : 'black')};
+//   }
+// `
+
 const Root = system({
-  bg: 'grays.0',
+  fontFamily: 'slab',
+  color: 'grays.6',
+  fontSize: 2,
 })
 
 const Container = system({
   is: Box,
-  bg: 'grays.0',
-  color: 'grays.5',
   display: ['block', null, 'grid'],
-  gridTemplateColumns: '3fr 9fr',
+  gridTemplateColumns: '1fr 3fr',
   gridTemplateAreas: '"sidebar main"',
-  gridGap: theme.space[4],
-  fontFamily: theme.fonts.sansSerif,
-  lineHeight: theme.lineHeights.copy,
-  maxWidth: 8,
+  gridGap: 5,
+  maxWidth: 9,
   m: 'auto',
+  px: [3, 4],
 })
 
 const Layout = ({ children }) => (
@@ -66,9 +77,11 @@ const Layout = ({ children }) => (
               gridArea="sidebar"
               position={['static', 'static', 'sticky']}
               top={0}
-              minHeight={[theme.heights[4], null, '100vh']}
+              minHeight={theme.heights[4]}
+              height={[null, null, '100vh']}
+              py={4}
             />
-            <Box px={[3, 4]} py={[0, 4]} gridArea="main">
+            <Box py={4} gridArea="main">
               <div>{children}</div>
             </Box>
           </Container>

@@ -1,71 +1,11 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { theme, Box, Heading, Text } from '../design-system'
+import { theme, Box, Heading, Text, Link } from '../design-system'
 
 import Layout from '../components/layout'
+import Section from '../components/section'
+import Project from '../components/project'
 import MediaObj from '../components/mediaobj'
-// import Section from '../components/section'
-
-const Section = props => (
-  <Box mb={[0, 5]}>
-    <Box
-      pt={[4, 4]}
-      pb={[3, 4]}
-      px={[3, 0]}
-      mx={[-3, 0]}
-      display="flex"
-      alignItems="baseline"
-      justifyContent="space-between"
-      borderTop="1px solid"
-      borderColor="grays.0"
-      bg={['grays.0', null]}
-    >
-      <Heading
-        lineHeight="solid"
-        textStyle="caps"
-        fontStyle="normal"
-        color="grays.3"
-        fontSize={0}
-        m={0}
-        is="h2"
-      >
-        {props.title}
-      </Heading>
-      <Text
-        lineHeight="solid"
-        textStyle="caps"
-        color="grays.3"
-        fontSize={0}
-        m={0}
-      >
-        {props.meta}
-      </Text>
-    </Box>
-
-    {props.children}
-  </Box>
-)
-
-const Project = props => (
-  <Box
-    py={[3, 4]}
-    display="grid"
-    gridTemplateColumns={['1fr', '2fr 2fr', '4fr 2fr']}
-    gridGap={3}
-    borderTop="1px solid"
-    borderColor="grays.1"
-  >
-    <Box>
-      <Heading mb={2}>{props.title}</Heading>
-      <Text>{props.description}</Text>
-    </Box>
-    {props.children && (
-      <Box display="grid" gridGap="1px">
-        {props.children}
-      </Box>
-    )}
-  </Box>
-)
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -73,67 +13,39 @@ const IndexPage = () => (
       <Section title="Projects at Webflow" meta="2015–2018">
         <Project
           title="Webflow Grid"
+          meta="2018"
           description="Designed a system allowing designers to visually create comdivlex
           web interactions and animations without any coding skills."
         >
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="Webflow Grid: First Look"
-            subtitle="Quick Product Demo"
-          />
-
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="IX2: First Look"
-            subtitle="Quick Product Demo"
-          />
+          <Link fontStyle="italic" href="https://youtu.be/Z0TpdiMFVIk">
+            First Look Video ->
+          </Link>
+          <Link fontStyle="italic" href="https://webflow.com/grid">
+            Grid Playground ->
+          </Link>
         </Project>
 
         <Project
           title="Webflow Interactions 2.0"
+          meta="2017"
           description="Designed a system allowing designers to visually create complex
               web interactions and animations without any coding skills."
         >
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="IX2: First Look"
-            subtitle="Quick Product Demo"
-          />
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="IX2: First Look"
-            subtitle="Quick Product Demo"
-          />
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="IX2: First Look"
-            subtitle="Quick Product Demo"
-          />
+          <Link href="https://youtu.be/RmTIx9I78QI">
+            Webflow Interactions: First Look
+          </Link>
+
+          <Link href="https://webflow.com/interactions-animations">
+            Product Overview
+          </Link>
         </Project>
 
         <Project
           title="Webflow Flexbox"
+          meta="2016"
           description="designed a visual interface to CSS Flexbox mechanism allowing
           designers to create expressive, responsive layouts on the web."
-        >
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="IX2: First Look"
-            subtitle="Quick Product Demo"
-          />
-
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="IX2: First Look"
-            subtitle="Quick Product Demo"
-          />
-
-          <MediaObj
-            link="https://www.youtube.com/watch?v=RmTIx9I78QI"
-            title="IX2: First Look"
-            subtitle="Quick Product Demo"
-          />
-        </Project>
+        />
       </Section>
 
       <Section title="Things I worked on before" meta="2012–2014">

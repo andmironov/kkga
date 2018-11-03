@@ -4,43 +4,47 @@ import { Box, Text, Heading, Link } from '../design-system'
 
 const Sidebar = props => (
   <Box
-    bg="grays.1"
-    px={[3, 4]}
-    py={[3, 4]}
-    display="flex"
+    display={['block', null, 'flex']}
     justifyContent="space-between"
-    // borderRight={['none', null, '1px solid']}
-    // borderBottom={['1px solid', null, 'none']}
-    // borderColor={['black', null, 'black']}
     flexDirection="column"
     {...props}
   >
-    <Box>
-      <Heading mb={3}>{props.title}</Heading>
-    </Box>
+    <Heading mb={2}>{props.title}</Heading>
+
     <Text mb={2}>
       Working as a product designer at{' '}
       <Link href="https://webflow.com/">Webflow</Link> — a tool that makes
       producing for web more approachable.
     </Text>
-    <Text>
+    <Text mb={2}>
       Mostly trying to figure out how to create the right visual tools for
       designers.
     </Text>
     <Box
       display="grid"
-      gridGap={3}
+      gridGap={1}
       gridAutoFlow="column"
       justifyContent="start"
-      fontSize={[0, 1]}
-      color="grays.3"
-      mt="auto"
+      fontFamily="slab"
+      fontStyle="italic"
+      mt={[null, 'auto']}
+      color="grays.5"
     >
-      <Link href="#">email</Link>
-      <Link href="#">twitter</Link>
-      <Link href="#">github</Link>
-      <Link href="#">dribbble</Link>
-      <Link href="#">flickr</Link>
+      <Link css="text-decoration: none;" href="#">
+        email
+      </Link>
+      <Text color="grays.4">&middot;</Text>
+      <Link css="text-decoration: none;" href="#">
+        twitter
+      </Link>
+      <Text color="grays.4">&middot;</Text>
+      <Link css="text-decoration: none;" href="#">
+        github
+      </Link>
+      <Text color="grays.4">&middot;</Text>
+      <Link css="text-decoration: none;" href="#">
+        flickr
+      </Link>
     </Box>
   </Box>
 )

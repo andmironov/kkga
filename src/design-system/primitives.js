@@ -1,6 +1,4 @@
 import system from 'system-components'
-import { themeGet } from 'styled-system'
-import styled from 'styled-components'
 
 export const Box = system(
   // core
@@ -8,6 +6,8 @@ export const Box = system(
   'width',
   'color',
   'fontSize',
+  'fontFamily',
+  'fontStyle',
   // borders
   'borders',
   'borderColor',
@@ -54,15 +54,17 @@ Box.displayName = 'Box'
 // TEXT
 export const Text = system(
   {
-    fontSize: [1, 2],
-    color: 'grays.4',
-    fontFamily: 'sansSerif',
-    fontStyle: 'normal',
+    fontSize: 2,
+    lineHeight: 'copy',
+    fontFamily: 'slab',
+    color: 'grays.6',
   },
   'space',
   'color',
   'fontSize',
-  'lineHeight'
+  'fontStyle',
+  'lineHeight',
+  'textStyle'
 )
 Text.displayName = 'Text'
 
@@ -71,11 +73,13 @@ export const Heading = system(
   {
     is: 'h1',
     m: 0,
-    fontSize: [1, 2],
-    color: 'grays.5',
-    fontFamily: 'sansSerif',
-    fontStyle: 'italic',
+    fontSize: 2,
+    fontFamily: 'slab',
+    lineHeight: 'copy',
+    fontWeight: 6,
+    color: 'grays.8',
   },
+  'fontStyle',
   'textStyle',
   'lineHeight'
 )
@@ -89,17 +93,24 @@ export const Image = system(
   },
   'space',
   'width',
-  'height'
+  'height',
+  'borders',
+  'borderColor',
+  'borderRadius'
 )
 Image.displayName = 'Image'
 
 // LINK
-export const Link = styled.a`
-  text-decoration-color: ${themeGet('colors.grays.3')};
-  text-decoration-style: dotted;
-  color: inherit;
-  &:hover {
-    color: ${themeGet('colors.cyan')};
-  }
-`
+export const Link = system(
+  {
+    is: 'a',
+    color: 'inherit',
+  },
+  {
+    '&:hover': {
+      color: 'white',
+    },
+  },
+  'fontStyle'
+)
 Link.displayName = 'Link'
