@@ -9,7 +9,7 @@ export const Base = system({
   p: 3,
   maxWidth: '40em',
   m: 'auto',
-  color: '#51575e',
+  color: '#353a3f',
 })
 
 export const p = system({
@@ -23,7 +23,7 @@ export const Heading = system(
     mt: 4,
     mb: 4,
     fontSize: 'inherit',
-    color: '#353a3f',
+    color: '#212529',
     fontWeight: '600',
   },
   'borderBottom',
@@ -33,7 +33,7 @@ export const Heading = system(
 export const a = system(
   {
     is: 'a',
-    color: '#51575e',
+    color: '#353a3f',
   },
   `
   text-decoration-style: dotted;
@@ -72,9 +72,10 @@ export const components = {
   h2: setProps({
     is: 'h2',
     mt: 5,
-    fontWeight: 'normal',
+    fontWeight: 'inherit',
+    fontSize: '13px',
     borderBottom: 1,
-    css: 'text-transform: uppercase; letter-spacing: 0.02em;',
+    css: 'text-transform: uppercase; letter-spacing: 0.004em;',
   })(Heading),
   h3: setProps({ is: 'h3', mb: 0 })(Heading),
   h4: setProps({ is: 'h4' })(Heading),

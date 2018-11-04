@@ -14,7 +14,7 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
 A system allowing designers to visually create complex web interactions and animations without any coding skills.
 
 - [youtu.be/RmTIx9I78QI](https://youtu.be/RmTIx9I78QI) (demo video)
-- [webflow.com/ix2](https://webflow.com/ix2) (launch page, designed by Ryan Morrison)
+- [webflow.com/ix2](https://webflow.com/ix2) (launch page)
 - [webflow.com/interactions-animations](https://webflow.com/interactions-animations) (product overview)
 
 ### Webflow Flexbox
