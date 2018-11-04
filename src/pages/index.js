@@ -2,16 +2,21 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { MDXProvider } from '@mdx-js/tag'
 import { StaticQuery, graphql } from 'gatsby'
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 import { components, Root } from '../components/components'
 import Readme from '../../README.md'
 
-injectGlobal`
-body {font-family:'Iosevka Slab', monospace}
+const GlobalStyle = createGlobalStyle`
+  @import url('https://rsms.me/inter/inter-ui.css');
+  body {
+    font-family:'Inter UI', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+  }
 `
 
-const Layout = ({ children }) => (
+const Layout = () => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -37,6 +42,7 @@ const Layout = ({ children }) => (
             rel="stylesheet"
           />
         </Helmet>
+        <GlobalStyle />
         <MDXProvider components={components}>
           <Root>
             <Readme />
