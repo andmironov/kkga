@@ -1,10 +1,12 @@
 # Gadzhi Kharkharov, ~designer
 
-Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers
+Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
 ## Projects at Webflow, 2015–2018
 
 ### Webflow Grid
+
+A flexible layout mechanism with direct manipulation controls, built on top of CSS Grid.
 
 - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
 - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
