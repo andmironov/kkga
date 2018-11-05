@@ -26,7 +26,7 @@ Visual interface to CSS Flexbox mechanism allowing designers to create expressiv
 - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
 - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
 
-## Earlier, 2012-2014
+## Earlier, 2012–2014
 
 ### Stampsy
 

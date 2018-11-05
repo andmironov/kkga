@@ -15,6 +15,7 @@ export const Base = system({
 export const p = system({
   mb: 2,
   fontSize: 'inherit',
+  fontFamily: "'IBM Plex Serif', 'Georgia', Times, serif",
 })
 
 export const Heading = system(
@@ -23,8 +24,10 @@ export const Heading = system(
     mt: 4,
     mb: 4,
     fontSize: 'inherit',
+    fontFamily: "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif",
     color: '#212529',
-    fontWeight: '600',
+    fontWeight: 'bold',
+    lineHeight: 1.5,
   },
   'borderBottom',
   'opacity'
@@ -56,6 +59,7 @@ export const li = system({
   mb: 0,
   fontStyle: 'italic',
   color: '#939ba4',
+  css: "font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
 })
 
 export const hr = system({
@@ -72,12 +76,14 @@ export const components = {
   h2: setProps({
     is: 'h2',
     mt: 5,
+    mb: 4,
     fontWeight: 'inherit',
-    fontSize: '13px',
+    fontSize: '12px',
     borderBottom: 1,
-    css: 'text-transform: uppercase; letter-spacing: 0.004em;',
+    css:
+      'display: inline-block; text-transform: uppercase; letter-spacing: 0.025em;',
   })(Heading),
-  h3: setProps({ is: 'h3', mb: 0 })(Heading),
+  h3: setProps({ is: 'h3', my: 0 })(Heading),
   h4: setProps({ is: 'h4' })(Heading),
   h5: setProps({ is: 'h5' })(Heading),
   h6: setProps({ is: 'h6' })(Heading),

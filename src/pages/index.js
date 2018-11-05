@@ -6,11 +6,11 @@ import { createGlobalStyle } from 'styled-components'
 
 import { components, Root } from '../components/components'
 import Readme from '../../README.md'
+import '../../node_modules/@ibm/plex/css/ibm-plex.css'
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://rsms.me/inter/inter-ui.css');
   body {
-    font-family:'Inter UI', sans-serif;
+    font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
     margin: 0;
     background-color: #f8f9fa;
   }
@@ -32,15 +32,11 @@ const Layout = () => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Product designer at Webflow' },
+            { name: 'keywords', content: 'gadzhi, kharkharov' },
           ]}
         >
           <html lang="en" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i"
-            rel="stylesheet"
-          />
         </Helmet>
         <GlobalStyle />
         <MDXProvider components={components}>
