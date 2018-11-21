@@ -4,10 +4,10 @@ import system from 'system-components'
 const setProps = base => Comp => props => <Comp {...base} {...props} />
 
 export const Base = system({
-  fontSize: [14, 15],
+  fontSize: [14, 16],
   lineHeight: 1.5,
   p: 3,
-  maxWidth: '40em',
+  maxWidth: '36em',
   m: 'auto',
   color: '#353a3f',
 })
@@ -39,8 +39,8 @@ export const a = system(
     color: '#353a3f',
   },
   `
-  text-decoration-style: dotted;
-  &:hover { text-decoration-style: solid;}
+  text-decoration-color: #939ba4;
+  &:hover { text-decoration-color: currentColor;}
 `
 )
 
@@ -49,9 +49,9 @@ export const ul = system(
     is: 'ul',
     mt: 2,
     mb: 4,
-    p: 0,
+    pl: 4,
   },
-  `list-style: none;`
+  `list-style: circle;`
 )
 
 export const li = system({
@@ -78,7 +78,7 @@ export const components = {
     mt: 5,
     mb: 4,
     fontWeight: 'inherit',
-    fontSize: '12px',
+    fontSize: '0.75em',
     borderBottom: 1,
     css:
       'display: inline-block; text-transform: uppercase; letter-spacing: 0.025em;',
