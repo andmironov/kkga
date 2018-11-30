@@ -4,7 +4,7 @@ import system from 'system-components'
 const setProps = base => Comp => props => <Comp {...base} {...props} />
 
 export const Base = system({
-  fontSize: [14, 16],
+  fontSize: [14, 16, 18],
   lineHeight: 1.5,
   p: 3,
   maxWidth: '36em',
@@ -13,21 +13,18 @@ export const Base = system({
 })
 
 export const p = system({
-  mb: 2,
-  fontSize: 'inherit',
-  fontFamily: "'IBM Plex Serif', 'Georgia', Times, serif",
+  my: 3,
 })
 
 export const Heading = system(
   {
     is: 'h2',
     mt: 4,
-    mb: 4,
+    mb: 3,
     fontSize: 'inherit',
-    fontFamily: "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif",
     color: '#212529',
-    fontWeight: 'bold',
-    lineHeight: 1.5,
+    fontWeight: '500',
+    lineHeight: 1,
   },
   'borderBottom',
   'opacity'
@@ -36,54 +33,47 @@ export const Heading = system(
 export const a = system(
   {
     is: 'a',
-    color: '#353a3f',
+    color: 'inherit',
   },
-  `
-  text-decoration-color: #939ba4;
-  &:hover { text-decoration-color: currentColor;}
+  `text-decoration-color: #adb5bd
 `
 )
 
 export const ul = system(
   {
     is: 'ul',
-    mt: 2,
-    mb: 4,
-    pl: 4,
+    mt: 3,
+    mb: 3,
+    pl: 0,
+    fontSize: '0.875em',
   },
-  `list-style: circle;`
+  `list-style: none;`
 )
 
 export const li = system({
   is: 'li',
   mb: 0,
-  fontStyle: 'italic',
-  color: '#939ba4',
-  css: "font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+  color: '#727981',
 })
 
 export const hr = system({
   is: 'hr',
-  my: 5,
+  my: 4,
   border: 0,
-  borderBottom: 1,
-  color: 'inherit',
+  borderBottom: '1px dashed',
+  color: '#adb5bd',
+})
+
+export const img = system({
+  is: 'img',
+  maxWidth: '100%',
 })
 
 export const components = {
   Heading,
-  h1: setProps({ is: 'h1' })(Heading),
-  h2: setProps({
-    is: 'h2',
-    mt: 5,
-    mb: 4,
-    fontWeight: 'inherit',
-    fontSize: '0.75em',
-    borderBottom: 1,
-    css:
-      'display: inline-block; text-transform: uppercase; letter-spacing: 0.025em;',
-  })(Heading),
-  h3: setProps({ is: 'h3', my: 0 })(Heading),
+  h1: setProps({ is: 'h1', fontWeight: '700' })(Heading),
+  h2: setProps({ is: 'h2' })(Heading),
+  h3: setProps({ is: 'h3' })(Heading),
   h4: setProps({ is: 'h4' })(Heading),
   h5: setProps({ is: 'h5' })(Heading),
   h6: setProps({ is: 'h6' })(Heading),
@@ -92,6 +82,7 @@ export const components = {
   ul,
   li,
   hr,
+  img,
 }
 
 export const Root = props => <Base>{props.children}</Base>
