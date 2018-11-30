@@ -6,11 +6,11 @@ import { createGlobalStyle } from 'styled-components'
 
 import { components, Root } from '../components/components'
 import Readme from '../../README.md'
-import '../../node_modules/@ibm/plex/css/ibm-plex.css'
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://rsms.me/inter/inter-ui.css');
+  html { font-family: 'Inter UI', sans-serif; }
   body {
-    font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
     margin: 0;
     background-color: #f8f9fa;
   }
