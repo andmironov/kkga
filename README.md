@@ -11,7 +11,9 @@ A flexible layout mechanism with direct manipulation controls, built on top of C
 - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
 - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
 
-<video autoplay muted controls width="100%" src="grid.mp4" />
+<video width="100%" autoplay controls loop autobuffer muted playsinline>
+    <source src="grid.mp4" type="video/mp4" />
+</video>
 
 ---
 
@@ -23,7 +25,9 @@ A system allowing designers to visually create complex web interactions and anim
 - [webflow.com/interactions-animations](https://webflow.com/interactions-animations) (product overview)
 - [youtu.be/RmTIx9I78QI](https://youtu.be/RmTIx9I78QI) (demo video)
 
-<video autoplay muted controls width="100%" src="ix2.mp4" />
+<video width="100%" autoplay controls loop autobuffer muted playsinline>
+    <source src="ix2.mp4" type="video/mp4" />
+</video>
 
 ---
 
@@ -52,7 +56,9 @@ Worked as a designer (and partly as a front-end engineer) at Stampsy — a web p
 
 In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
 
-<video autoplay muted controls width="100%" src="stampsy-ipad.mp4" />
+<video width="100%" autoplay controls loop autobuffer muted playsinline>
+    <source src="stampsy-ipad.mp4" type="video/mp4" />
+</video>
 
 ---
 
