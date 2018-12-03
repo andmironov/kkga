@@ -13,6 +13,7 @@ export const Base = system({
 })
 
 export const p = system({
+  is: 'p',
   my: 3,
 })
 
@@ -23,8 +24,8 @@ export const Heading = system(
     mb: 3,
     fontSize: 'inherit',
     color: '#212529',
-    fontWeight: '500',
     lineHeight: 1,
+    fontWeight: 'bold',
   },
   'borderBottom',
   'opacity'
@@ -35,8 +36,7 @@ export const a = system(
     is: 'a',
     color: 'inherit',
   },
-  `text-decoration-color: #adb5bd
-`
+  `text-decoration-color: #adb5bd`
 )
 
 export const ul = system(
@@ -71,7 +71,7 @@ export const img = system({
 
 export const components = {
   Heading,
-  h1: setProps({ is: 'h1', fontWeight: '700' })(Heading),
+  h1: setProps({ is: 'h1', color: 'inherit' })(Heading),
   h2: setProps({ is: 'h2' })(Heading),
   h3: setProps({ is: 'h3' })(Heading),
   h4: setProps({ is: 'h4' })(Heading),
