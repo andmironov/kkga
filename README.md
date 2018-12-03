@@ -1,5 +1,7 @@
 # Gadzhi Kharkharov, ~designer
 
+<img src="face.jpg" align="right" width="72" height="72" style="margin: 0 0 12px 12px"/>
+
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
 ---
