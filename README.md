@@ -13,7 +13,7 @@ A flexible layout mechanism with direct manipulation controls, built on top of C
 - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
 - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
 
-<video src="/grid.mp4" type="video/mp4" controls playsinline width="100%"></video>
+<video src="http://s3.kkga.me/WItn.mp4" type="video/mp4" controls playsinline width="100%"></video>
 
 ---
 
