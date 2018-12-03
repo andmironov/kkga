@@ -54,7 +54,7 @@ Worked as a designer (and partly as a front-end engineer) at Stampsy — a web p
 
 In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
 
-<video src="https://www.dropbox.com/s/y47lo25iz9t5300/stampsy-ipad.mp4" type="video/mp4" controls playsinline width="100%"></video>
+<video src="https://dl.dropbox.com/s/y47lo25iz9t5300/stampsy-ipad.mp4" type="video/mp4" controls playsinline width="100%"></video>
 
 ---
 
