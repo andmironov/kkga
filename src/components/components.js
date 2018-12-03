@@ -4,7 +4,7 @@ import system from 'system-components'
 const setProps = base => Comp => props => <Comp {...base} {...props} />
 
 export const Base = system({
-  fontSize: [14, 16, 18],
+  fontSize: [14, 16],
   lineHeight: 1.5,
   p: 3,
   maxWidth: '36em',
