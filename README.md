@@ -13,8 +13,6 @@ A flexible layout mechanism with direct manipulation controls, built on top of C
 - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
 - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
 
-<video src="https://dl.dropboxusercontent.com/s/ran2e8w30gux3rj/grid.mp4" type="video/mp4" controls playsinline width="100%"></video>
-
 ---
 
 ### Webflow Interactions, 2017
@@ -25,8 +23,6 @@ A system allowing designers to visually create complex web interactions and anim
 - [webflow.com/interactions-animations](https://webflow.com/interactions-animations) (product overview)
 - [youtu.be/RmTIx9I78QI](https://youtu.be/RmTIx9I78QI) (demo video)
 
-<video src="http://s3.kkga.me/cWjj.mp4" type="video/mp4" controls playsinline width="100%"></video>
-
 ---
 
 ### Webflow Flexbox, 2015
@@ -35,8 +31,6 @@ Visual interface to CSS Flexbox mechanism allowing designers to create expressiv
 
 - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
 - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
-
-![](flexbox.gif)
 
 ---
 
@@ -53,8 +47,6 @@ Worked as a designer (and partly as a front-end engineer) at Stampsy — a web p
 ### Stampsy iPad app, 2012–2013
 
 In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
-
-<video src="https://dl.dropbox.com/s/y47lo25iz9t5300/stampsy-ipad.mp4" type="video/mp4" controls playsinline width="100%"></video>
 
 ---
 
