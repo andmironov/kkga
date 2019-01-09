@@ -1,6 +1,6 @@
-# Gadzhi Kharkharov, ~designer
+<img src="face.jpg" width="80" height="80"/>
 
-<img src="face.jpg" align="right" width="72" height="72" style="margin: 0 0 12px 12px"/>
+# Gadzhi Kharkharov, ~designer
 
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
@@ -13,7 +13,6 @@ A flexible layout mechanism with direct manipulation controls, built on top of C
 - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
 - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
 
----
 
 ### Webflow Interactions, 2017
 
@@ -23,7 +22,6 @@ A system allowing designers to visually create complex web interactions and anim
 - [webflow.com/interactions-animations](https://webflow.com/interactions-animations) (product overview)
 - [youtu.be/RmTIx9I78QI](https://youtu.be/RmTIx9I78QI) (demo video)
 
----
 
 ### Webflow Flexbox, 2015
 
@@ -32,7 +30,6 @@ Visual interface to CSS Flexbox mechanism allowing designers to create expressiv
 - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
 - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
 
----
 
 ### Stampsy, 2014
 
@@ -42,13 +39,13 @@ Worked as a designer (and partly as a front-end engineer) at Stampsy — a web p
 - [vimeo.com/199982837](https://vimeo.com/199982837) (product video)
 - [tnw.to/i4tHc](http://tnw.to/i4tHc) (article on TNW)
 
----
 
 ### Stampsy iPad app, 2012–2013
 
 In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
 
----
+
+### Misc
 
 At some point I designed a [UI theme](https://github.com/kkga/spacegray) for Sublime Text — a popular code editor. It's been installed by [~400k users](https://packagecontrol.io/packages/Theme%20-%20Spacegray) and has ~7k stars on GitHub.
 
@@ -64,11 +61,6 @@ In my early twenties I've played a lot of World of Warcraft — a multiplayer on
 - [github][github]
 - [flickr][flickr]
 
----
-
-```
-¯\\_(ツ)_/¯
-```
 
 [resume]: https://www.dropbox.com/s/3wlkwpjgpvyvm4g/Resume.pdf?dl=0
 [github]: https://github.com/kkga
