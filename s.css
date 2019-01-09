@@ -1,0 +1,7 @@
+body {
+  font-family: monospace;
+}
+
+.container {
+  max-width: 80ch;
+}
