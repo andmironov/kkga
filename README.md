@@ -1,4 +1,4 @@
-<img src="face.jpg" width="80" height="80"/>
+![](face-dither.png)
 
 # Gadzhi Kharkharov, ~designer
 
@@ -13,7 +13,6 @@ A flexible layout mechanism with direct manipulation controls, built on top of C
 - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
 - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
 
-
 ### Webflow Interactions, 2017
 
 A system allowing designers to visually create complex web interactions and animations without any coding skills.
@@ -22,14 +21,12 @@ A system allowing designers to visually create complex web interactions and anim
 - [webflow.com/interactions-animations](https://webflow.com/interactions-animations) (product overview)
 - [youtu.be/RmTIx9I78QI](https://youtu.be/RmTIx9I78QI) (demo video)
 
-
 ### Webflow Flexbox, 2015
 
 Visual interface to CSS Flexbox mechanism allowing designers to create expressive, responsive layouts on the web.
 
 - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
 - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
-
 
 ### Stampsy, 2014
 
@@ -39,11 +36,9 @@ Worked as a designer (and partly as a front-end engineer) at Stampsy — a web p
 - [vimeo.com/199982837](https://vimeo.com/199982837) (product video)
 - [tnw.to/i4tHc](http://tnw.to/i4tHc) (article on TNW)
 
-
 ### Stampsy iPad app, 2012–2013
 
 In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
-
 
 ### Misc
 
@@ -60,7 +55,6 @@ In my early twenties I've played a lot of World of Warcraft — a multiplayer on
 - [twitter][twitter]
 - [github][github]
 - [flickr][flickr]
-
 
 [resume]: https://www.dropbox.com/s/3wlkwpjgpvyvm4g/Resume.pdf?dl=0
 [github]: https://github.com/kkga
